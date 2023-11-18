@@ -1,0 +1,41 @@
+
+<div>
+  <button class="buttonadd" style="cursor: pointer;" (click)="irAgregar()"> + </button>
+</div>
+<br>
+<div>
+  <!--<div *ngFor="let persona of personas">
+    <ul>
+      <li>
+        <a [routerLink]="['/personas', persona.idPersona ]" routerLinkActive="router-link-active">
+          ({{persona.idPersona}}) {{persona.nombre}}
+        </a>
+      </li>
+    </ul>
+  </div>-->
+  <div >
+    <table border="1">
+      <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Editar</th>
+          <th>Eliminar</th>
+      </tr>
+
+      <tr *ngFor="let persona of personas">
+          <td>{{persona.idPersona}} </td>
+          <td >{{persona.nombre}}</td>
+          <th> <a [routerLink]="['/personas', persona.idPersona ]">
+            Editar
+          </a></th>
+          <th><a [routerLink]="['/personas', persona.idPersona]" (click)="onEliminarPersona(persona.idPersona)">Eliminar</a></th>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<br>
+<!-- incrusta el componente de formulario /personas/agregar-->
+<router-outlet>
+</router-outlet>
+

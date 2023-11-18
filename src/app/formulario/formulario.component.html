@@ -1,0 +1,8 @@
+<div>
+  <!-- #f nombre del formulario ++ validar el form y llamar al metodo -->
+ <form #f="ngForm" (ngSubmit)="f.form.valid && onGuardarPersona()">
+  <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="nombreInput" required/>
+  <button class="buttonadd" type="submit" style="cursor: pointer;" >+</button>
+  <button *ngIf="idPersona != null" type="submit" style="cursor: pointer;" class="buttondel" (click)="onEliminarPersona()">-</button>
+ </form>
+</div>

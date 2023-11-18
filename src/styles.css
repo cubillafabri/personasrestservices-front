@@ -1,0 +1,51 @@
+html{
+  display: flex;
+  justify-content: center;
+  background-color: #323232;
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+h1{
+  color: #fff;
+  align-content: center;
+  margin-left: calc(25px);
+}
+
+th,td, a{
+  color: #fff;
+  padding: 10px;
+}
+
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+  width: 99%;
+  margin-bottom: 10px;
+}
+
+.buttonadd {
+  min-height: 50px;
+  width: 100%;
+  border-color: transparent;
+  background-color: #3F51B5;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+  margin-bottom: 10px;
+}
+
+.buttondel {
+  min-height: 50px;
+  width: 100%;
+  border-color: transparent;
+  background-color: #b53f3f;
+  color: #ffffff;
+  font-size: 30px;
+  border-width: 0;
+  margin-bottom: 10px;
+}
